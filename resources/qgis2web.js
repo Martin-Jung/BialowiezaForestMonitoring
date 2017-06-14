@@ -62,7 +62,7 @@ var map = new ol.Map({
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
-        extent: [2584310.578629, 6890969.418967, 2674409.421371, 6972847.991472], maxZoom: 28, minZoom: 1
+        extent: [2591519.972057, 6892908.964403, 2667210.546627, 6970922.769292], maxZoom: 28, minZoom: 1
     })
 });
 
@@ -72,7 +72,7 @@ layerSwitcher.hidePanel = function() {};
 layerSwitcher.showPanel();
 
 
-map.getView().fit([2584310.578629, 6890969.418967, 2674409.421371, 6972847.991472], map.getSize());
+map.getView().fit([2591519.972057, 6892908.964403, 2667210.546627, 6970922.769292], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
@@ -588,5 +588,5 @@ var attribution = document.getElementsByClassName('ol-attribution')[0];
 var attributionList = attribution.getElementsByTagName('ul')[0];
 var firstLayerAttribution = attributionList.getElementsByTagName('li')[0];
 var qgis2webAttribution = document.createElement('li');
-qgis2webAttribution.innerHTML = '';
+qgis2webAttribution.innerHTML = '<a href="https://github.com/tomchadwin/qgis2web">qgis2web</a>';
 attributionList.insertBefore(qgis2webAttribution, firstLayerAttribution);
